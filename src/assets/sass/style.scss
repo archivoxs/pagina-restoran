@@ -15,6 +15,7 @@ li img {
     height: 190px;
 }
 body{
+    color: $main-white;
     background-color: $main-black;
     display: flex;
     justify-content: center;
@@ -51,14 +52,14 @@ body{
                      opacity: .5;
                         h1 {
                            display: flex;
-                            font-size: 65px;
+                            font-size: 25px;
                             color: $main-white;
                             text-align: center;
                             opacity: 1;
                             justify-content: center;
                             align-items: center;
-                             @media (max-width: 450px) {
-                            font-size:25px ;
+                             @media (min-width: 450px) {
+                            font-size:65px ;
                             }
                         }
             }
@@ -70,13 +71,14 @@ body{
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+                @media (min-width: 450px) {
+                    flex-direction: row;
+                }
                 ul {
                     padding: 5px;
                     display: flex;
                     flex-direction: column;
-                    
-                    
-                    li{ 
+                    li{
                         margin: 5px;
                         display: flex;
                         justify-content: center;
@@ -94,5 +96,14 @@ body{
                     }
                 }
             }
+        footer {
+            background-color: $main-black;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-top: 45px;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
