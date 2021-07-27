@@ -1,0 +1,14 @@
+{
+  "name": "restoran-store",
+  "version": "1.0.0",
+  "description": "restoran web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch src/assets/sass -o src/assets/css"
+  },
+  "author": "fennixs",
+  "license": "autodidact",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
